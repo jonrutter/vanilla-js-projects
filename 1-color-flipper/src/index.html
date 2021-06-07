@@ -4,12 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Color Flipper App</title>
+    <meta name="author" content="Jon Rutter" />
+    <meta
+      name="description"
+      content="A background-color flipper web app. Randomly generates a color and updates the DOM accordingly. Users can also input the color manually."
+    />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
   </head>
   <body>
-    <h1>Hello, world.</h1>
+    <header>
+      <h1>Color Flipper</h1>
+      <div class="controls">
+        <button type="button" id="button-random" data-for="panel-random">
+          Random
+        </button>
+        <button type="button" id="button-manual" data-for="panel-manual">
+          Manual
+        </button>
+      </div>
+    </header>
+    <main>
+      <h2>Background-color: <span id="color-preview">#8A2BE2</span></h2>
+      <div class="panel" id="panel-random">
+        <button type="button" class="panel__button" id="color-random">
+          Flip color
+        </button>
+      </div>
+      <form class="panel hidden panel--dark" id="panel-manual">
+        <label for="color-manual" class="panel__label">Input color:</label>
+        <input
+          type="text"
+          class="panel__input"
+          id="color-manual"
+          placeholder="#000000"
+        />
+        <p class="panel__error hidden">
+          Please enter a valid 6-digit hexidecimal color (e.g., #8A2BE2).
+        </p>
+        <button
+          type="submit"
+          class="panel__button panel__button--small"
+          id="color-manual-submit"
+        >
+          Enter
+        </button>
+      </form>
+    </main>
   </body>
 </html>

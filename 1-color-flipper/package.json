@@ -1,7 +1,7 @@
 {
   "name": "color-flipper",
   "version": "1.0.0",
-  "description": "A background-color flipper. Allows users to specify a background-color, and updates the DOM accordingly. Also supports randomly generating colors.",
+  "description": "A background-color flipper web app. Randomly generates a color and updates the DOM accordingly. Users can also input the color manually.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
