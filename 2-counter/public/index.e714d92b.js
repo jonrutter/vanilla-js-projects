@@ -1,0 +1,2 @@
+!function(){const e=document.querySelector(".counter-text"),t=document.querySelector(".increase"),n=document.querySelector(".decrease"),c=document.querySelector(".reset");let o=0;function r(){e.textContent=o,e.style.color=o>0?"green":o<0?"red":"black"}t.addEventListener("click",(function(){o++,r()})),n.addEventListener("click",(function(){o--,r()})),c.addEventListener("click",(function(){o=0,r()}))}();
+//# sourceMappingURL=index.e714d92b.js.map

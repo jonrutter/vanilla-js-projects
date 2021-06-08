@@ -24,6 +24,20 @@ h1 {
   color: #8a2be2;
 }
 
+.rainbow {
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    purple
+  );
+  background-clip: text;
+  color: transparent;
+}
+
 .counter-text {
   font-size: 3rem;
   padding: 1rem;

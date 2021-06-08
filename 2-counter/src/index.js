@@ -37,14 +37,8 @@ function resetCount() {
 
 // Event Listeners
 
-increase.addEventListener('click', () => {
-  increaseCount();
-});
+increase.addEventListener('click', increaseCount);
 
-decrease.addEventListener('click', () => {
-  decreaseCount();
-});
+decrease.addEventListener('click', decreaseCount);
 
-reset.addEventListener('click', () => {
-  resetCount();
-});
+reset.addEventListener('click', resetCount);
