@@ -1,0 +1,91 @@
+:root {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #8a2be2;
+}
+
+.rainbow {
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    purple
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.counter-text {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  font-size: 100%;
+  border: 1px solid #8a2be2;
+  background-color: transparent;
+  font-family: inherit;
+  line-height: inherit;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: #8a2be2;
+  transition: all 0.2s;
+  margin: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #8a2be2;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .counter-text {
+    font-size: 5rem;
+  }
+
+  button {
+    padding: 1rem;
+  }
+}
