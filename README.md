@@ -12,3 +12,9 @@ See it live: https://jonrutter-color-flip.netlify.app/
 A counter app. Users can press buttons to increase or decrease the count. Special effects trigger when the counter reaches certain numbers.
 
 See it live: https://jonrutter-counter.netlify.app/
+
+## 3-testimonial-slider
+
+A testimonial slider component.
+
+See it live: https://jonrutter-testimonial-slider.netlify.app/
