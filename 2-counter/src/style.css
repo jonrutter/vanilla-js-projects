@@ -1,0 +1,66 @@
+:root {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #8a2be2;
+}
+
+.counter-text {
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.buttons > button {
+  margin: 1rem;
+}
+
+button {
+  font-size: 100%;
+  border: 1px solid #8a2be2;
+  background-color: transparent;
+  font-family: inherit;
+  line-height: inherit;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #8a2be2;
+  transition: all 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #8a2be2;
+}
