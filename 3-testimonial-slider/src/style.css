@@ -1,0 +1,167 @@
+:root {
+  font-size: 100%;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  --brand: #8a2be2;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: hsl(201, 97%, 97%);
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  width: 30%;
+  height: 3px;
+  background-color: var(--brand);
+}
+
+button {
+  font-size: 100%;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  -webkit-appearance: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* || carousel */
+
+.carousel {
+  border-radius: 0.5rem;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 640px;
+  max-height: 640px;
+  padding: 2rem 6rem;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.carousel__button {
+  padding: 1rem;
+  border: 1px solid hsl(271, 76%, 88%);
+  border-radius: 50%;
+  line-height: 1;
+  color: var(--brand);
+  transition: all 0.2s;
+  /* font-size: 1.5rem; */
+  display: inline-block;
+}
+
+.carousel__button:hover {
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: white;
+}
+
+.carousel__button-icon {
+  font-size: 24px;
+}
+
+.carousel__button--left,
+.carousel__button--right {
+  position: absolute;
+  bottom: 50%;
+}
+
+.carousel__button--left {
+  left: 1rem;
+}
+
+.carousel__button--right {
+  right: 1rem;
+}
+
+/* || card */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__image,
+.card__subtitle {
+  margin-bottom: 1rem;
+}
+
+.card__image {
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.card__subtitle {
+  font-size: 1.25rem;
+  color: var(--brand);
+}
+
+.card__body {
+  position: relative;
+  z-index: 1;
+}
+
+.card__background-icon {
+  position: absolute;
+  z-index: 0;
+  color: #8a2be2;
+  opacity: 0.1;
+  font-size: 100px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.card__background-icon--top-left {
+  top: -50px;
+  left: 0;
+}
+
+.card__background-icon--bottom-right {
+  bottom: -25px;
+  right: 0;
+}

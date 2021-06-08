@@ -10,8 +10,80 @@
     <meta name="description" content="A testimonial slider component." />
 
     <!-- <script src="https://kit.fontawesome.com/c624dca2aa.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Testimonials</h1>
+      <div class="carousel">
+        <button
+          class="carousel__button carousel__button--left"
+          id="prev"
+          aria-label="Previous testimonial"
+        >
+          <span class="material-icons carousel__button-icon"
+            >arrow_back_ios_new</span
+          >
+        </button>
+        <button
+          class="carousel__button carousel__button--right"
+          id="next"
+          aria-label="Next testimonial"
+        >
+          <span class="material-icons carousel__button-icon"
+            >arrow_forward_ios</span
+          >
+        </button>
+        <article class="card">
+          <img
+            class="card__image"
+            src="./images/image1-150px.png"
+            alt="Profile picture"
+          />
+          <h2 class="card__title">Wendy Smith</h2>
+          <span class="card__subtitle">Lead Developer</span>
+          <div class="card__body">
+            <span
+              class="
+                material-icons
+                card__background-icon card__background-icon--top-left
+              "
+              aria-hidden="true"
+            >
+              format_quote
+            </span>
+            <span
+              class="
+                material-icons
+                card__background-icon card__background-icon--bottom-right
+              "
+              aria-hidden="true"
+            >
+              format_quote
+            </span>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
 </html>
