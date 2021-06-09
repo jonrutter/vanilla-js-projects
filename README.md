@@ -24,3 +24,9 @@ See it live: https://jonrutter-testimonial-slider.netlify.app/
 An interactive, mobile-responsive navigation bar.
 
 See it live: https://jonrutter-navbar.netlify.app/
+
+## 5-slide-in-nav
+
+A navigation menu that slides in from the the side of the screen when a trigger button is pressed.
+
+See it live: https://jonrutter-slide-in-nav.netlify.app/
