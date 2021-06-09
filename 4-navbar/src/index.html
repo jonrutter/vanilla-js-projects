@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <meta name="author" content="Jon Rutter" />
+    <meta
+      name="description"
+      content="An interactive, mobile-responsive
+    navigation bar."
+    />
+
+    <!-- Google Fonts / Material Icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- My CSS / JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__crossbar">
+        <div class="nav__sm">
+          <h1 class="nav__logo">Navbar Project</h1>
+          <button
+            type="button"
+            class="nav__button"
+            id="nav-trigger"
+            aria-label="Navigation menu controls"
+          >
+            <span class="material-icons nav__button-icon">menu</span>
+          </button>
+        </div>
+        <ul class="nav__list" id="nav-dropdown">
+          <li class="nav__li"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__li"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__li"><a href="#" class="nav__link">Projects</a></li>
+          <li class="nav__li"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <h1>Responsive navbar demo</h1>
+      <p>Resize your browser window to see the effect.</p>
+    </main>
+  </body>
+</html>
