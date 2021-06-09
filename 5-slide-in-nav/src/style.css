@@ -59,7 +59,8 @@ body {
   left: 0;
   height: 100%;
   background-color: white;
-  min-width: 300px;
+  width: 80%;
+  max-width: 19rem;
   transition: transform 0.3s;
   transform: translate3d(-100%, 0, 0);
   display: flex;
@@ -112,12 +113,12 @@ body {
 .nav__link {
   display: block;
   padding: 1rem 3rem;
-  transition: transform 0.3s;
+  transition: padding 0.3s;
   font-size: 1.5rem;
 }
 
 .nav__link:hover {
-  transform: translate3d(1rem, 0, 0);
+  padding-left: 4rem;
   color: white;
 }
 
