@@ -22,16 +22,6 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <button
-      type="button"
-      class="button nav__open"
-      id="nav-open"
-      tabindex="0"
-      aria-haspopup="true"
-      aria-label="Open navigation menu"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
     <nav class="nav" aria-hidden="true">
       <button
         type="button"
@@ -66,9 +56,10 @@
             href="#"
             class="nav__social-link"
             tabindex="-1"
-            aria-label="Our Facebook"
-            ><i class="fab fa-facebook"></i
-          ></a>
+            aria-label="Our Facebook Page"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
         </li>
         <li>
           <a
@@ -76,8 +67,9 @@
             class="nav__social-link"
             tabindex="-1"
             aria-label="Our Twitter"
-            ><i class="fab fa-twitter"></i
-          ></a>
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
         </li>
         <li>
           <a
@@ -85,8 +77,9 @@
             class="nav__social-link"
             tabindex="-1"
             aria-label="Our Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
         </li>
         <li>
           <a
@@ -100,5 +93,20 @@
         </li>
       </ul>
     </nav>
+
+    <main>
+      <button
+        type="button"
+        class="button nav__open"
+        id="nav-open"
+        tabindex="0"
+        aria-haspopup="true"
+        aria-label="Open navigation menu"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <h2>Press the button to open the navigation menu</h2>
+    </main>
   </body>
 </html>
