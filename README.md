@@ -18,3 +18,9 @@ See it live: https://jonrutter-counter.netlify.app/
 A testimonial slider component.
 
 See it live: https://jonrutter-testimonial-slider.netlify.app/
+
+## 4-navbar
+
+An interactive, mobile-responsive navigation bar.
+
+See it live: https://jonrutter-navbar.netlify.app/
