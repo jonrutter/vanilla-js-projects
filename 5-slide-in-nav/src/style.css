@@ -1,0 +1,157 @@
+:root {
+  font-size: 100%;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+
+  --brand: #8a2be2;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  line-height: inherit;
+  border: none;
+  -webkit-appearance: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #f0faff;
+}
+
+.button {
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--brand);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* || nav */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: white;
+  min-width: 300px;
+  transition: transform 0.3s;
+  transform: translate3d(-100%, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden auto;
+  z-index: 3;
+}
+
+.nav--open {
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.07), 0 4px 4px rgba(0, 0, 0, 0.07),
+    0 6px 6px rgba(0, 0, 0, 0.07);
+}
+
+.nav__logo {
+  padding: 2rem 1rem 1rem;
+  color: black;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.nav__logo::after {
+  content: '';
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+  background-color: var(--brand);
+  height: 3px;
+}
+
+.nav__close {
+  z-index: 3;
+  line-height: 1;
+}
+
+.nav__list {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__li:hover {
+  background-color: var(--brand);
+}
+
+.nav__link {
+  display: block;
+  padding: 1rem 3rem;
+  transition: transform 0.3s;
+  font-size: 1.5rem;
+}
+
+.nav__link:hover {
+  transform: translate3d(1rem, 0, 0);
+  color: white;
+}
+
+.nav__social {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.nav__social-link {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: var(--brand);
+  transition: transform 0.3s;
+}
+
+.nav__social-link:hover {
+  transform: scale(2);
+}
+
+/* || misc */
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.no-scroll::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(39, 9, 67, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
