@@ -30,18 +30,23 @@
   <body>
     <nav class="nav">
       <div class="nav__crossbar">
-        <h1 class="nav__logo">Navbar Project</h1>
-        <button type="button" class="nav__button" id="nav-trigger">
-          <span class="material-icons nav__button-icon">menu</span>
-          <!-- <span class="material-icons  nav__button-icon">close</span> -->
-        </button>
+        <div class="nav__sm">
+          <h1 class="nav__logo">Navbar Project</h1>
+          <button type="button" class="nav__button" id="nav-trigger">
+            <span class="material-icons nav__button-icon">menu</span>
+          </button>
+        </div>
+        <ul class="nav__list" id="nav-dropdown">
+          <li class="nav__li"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__li"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__li"><a href="#" class="nav__link">Projects</a></li>
+          <li class="nav__li"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
       </div>
-      <ul class="nav__list" id="nav-dropdown">
-        <li class="nav__li"><a href="#" class="nav__link">Home</a></li>
-        <li class="nav__li"><a href="#" class="nav__link">About</a></li>
-        <li class="nav__li"><a href="#" class="nav__link">Projects</a></li>
-        <li class="nav__li"><a href="#" class="nav__link">Contact</a></li>
-      </ul>
     </nav>
+    <main>
+      <h1>Responsive navbar demo</h1>
+      <p>Resize your browser window to see the effect.</p>
+    </main>
   </body>
 </html>
