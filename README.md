@@ -30,3 +30,9 @@ See it live: https://jonrutter-navbar.netlify.app/
 A navigation menu that slides in from the the side of the screen when a trigger button is pressed.
 
 See it live: https://jonrutter-slide-in-nav.netlify.app/
+
+## 6-modal
+
+A demo modal box that pops up when users click a button. The box disappears when users click the greyed-out background.
+
+See it live: https://jonrutter-modal.netlify.app/
