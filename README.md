@@ -1,5 +1,5 @@
 # vanilla-js-projects
- Small coding projects built with vanilla JavaScript.
+A variety of small coding projects built with vanilla JavaScript. A mix of individual web pages, applications, and components.
 
 ## 1-color-flipper
 
