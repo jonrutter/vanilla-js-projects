@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <meta name="author" content="Jon Rutter" />
+    <meta
+      name="description"
+      content="A demo modal box that pops up when users click a button. The box disappears when users click the greyed-out background."
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- My CSS / JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="main">
+        <h1>Modal Project</h1>
+        <button type="button" class="button modal__open" aria-haspopup="true">
+          Open Modal
+        </button>
+      </div>
+      <div class="modal" aria-hidden="true">
+        <button type="button" class="modal__close" aria-label="Close Modal">
+          <span class="material-icons md-36">close</span>
+        </button>
+        <div class="modal__content">Modal Content</div>
+      </div>
+    </main>
+  </body>
+</html>

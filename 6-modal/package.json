@@ -1,0 +1,26 @@
+{
+  "name": "modal",
+  "version": "1.0.0",
+  "description": "A demo modal box that pops up when users click a button. The box disappears when users click the greyed-out background.",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonrutter/vanilla-js-projects.git"
+  },
+  "author": "Jon Rutter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonrutter/vanilla-js-projects/issues"
+  },
+  "homepage": "https://github.com/jonrutter/vanilla-js-projects#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "parcel": "^2.0.0-beta.2",
+    "prettier": "^2.3.1"
+  }
+}
