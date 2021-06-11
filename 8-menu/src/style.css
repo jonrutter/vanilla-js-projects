@@ -18,13 +18,19 @@
 h1,
 h2 {
   font-weight: normal;
-  font-family: Merriweather, serif;
 }
 
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-family: Montserrat, sans-serif;
+}
+
+h2 {
+  font-family: Merriweather, serif;
 }
 
 button {
@@ -68,10 +74,21 @@ main {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   transition: all 0.2s;
+  position: relative;
 }
 
 .btn:hover {
   background-color: rgba(0, 0, 0, 0.15);
+}
+
+.btn--active::after {
+  content: '';
+  width: 50%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 15%;
+  right: 25%;
 }
 
 /* || menu item */
@@ -90,6 +107,10 @@ main {
   grid-template-columns: 1fr;
   gap: 1rem;
   padding: 1rem;
+}
+
+.item--inactive {
+  display: none;
 }
 
 .item__image-wrap {

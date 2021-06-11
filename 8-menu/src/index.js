@@ -24,32 +24,28 @@ const dishes = [
     price: '10.50',
     imgSrc: avocadoSaladImgSrc,
     type: 'salad',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Spinach, tomato, and avocado salad.',
   },
   {
     title: 'House Salad',
     price: '9.50',
     imgSrc: houseSaladImgSrc,
     type: 'salad',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Our signature salad, served with a side of bread.',
   },
   {
     title: 'Mediterranean Salad',
     price: '11.50',
     imgSrc: mediterraneanSaladImgSrc,
     type: 'salad',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Leafy greens topped with tomatoes and feta cheese.',
   },
   {
     title: 'Gnocchi',
     price: '17.50',
     imgSrc: gnocchiImgSrc,
     type: 'pasta',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Gnocchi with pesto sauce, topped with parmesean cheese.',
   },
   {
     title: 'Lobster Ravioli',
@@ -57,55 +53,49 @@ const dishes = [
     imgSrc: lobsterRavioliImgSrc,
     type: 'pasta',
     description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+      'Ravioli filled with lobster, topped with creamy sauce and greens.',
   },
   {
     title: 'Pasta Bolognese',
     price: '18',
     imgSrc: bologneseImgSrc,
     type: 'pasta',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Pasta with our signature bolognese sauce.',
   },
   {
     title: 'Pasta with Shrimp',
     price: '17.50',
     imgSrc: pastaWithShrimpImgSrc,
     type: 'pasta',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Pasta topped with shrimp and chopped tomatoes.',
   },
   {
     title: 'Penne alla Vodka',
     price: '17',
     imgSrc: penneAllaVodkaImgSrc,
     type: 'pasta',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Penne with creamy red sauce.',
   },
   {
     title: 'BBQ Shrimp',
     price: '17.50',
     imgSrc: bbqShrimpImgSrc,
     type: 'seafood',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'BBQ shrimp, served on a skewer.',
   },
   {
     title: 'Fish Fry',
     price: '16.50',
     imgSrc: fishFryImgSrc,
     type: 'seafood',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Fish fry, served with a side of chips and tartar sauce.',
   },
   {
     title: 'Grilled Salmon',
     price: '19.50',
     imgSrc: grilledSalmonImgSrc,
     type: 'seafood',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Grilled salmon, served with a side of roasted vegetables.',
   },
   {
     title: 'Sushi Platter',
@@ -113,53 +103,49 @@ const dishes = [
     imgSrc: sushiPlatterImgSrc,
     type: 'seafood',
     description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+      'A platter of tuna, salmon, and shrimp sushi, served with wasabi and soy sauce.',
   },
   {
     title: 'Filet Mignon',
     price: '22',
     imgSrc: filetMignonImgSrc,
     type: 'steak',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Our signature filet mignon, cooked to order.',
   },
   {
     title: 'Chocolate Cake',
     price: '9',
     imgSrc: chocolateCakeImgSrc,
     type: 'dessert',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Multi-layered chocolate cake.',
   },
   {
     title: 'Death by Brownie',
     price: '8.50',
     imgSrc: deathByBrownieImgSrc,
     type: 'dessert',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Decadent chocolate brownie.',
   },
   {
     title: 'Tiramisu',
     price: '10',
     imgSrc: tiramisuImgSrc,
     type: 'dessert',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Our signature tiramisu.',
   },
   {
     title: 'Very Berry Cheesecake',
     price: '9.50',
     imgSrc: veryBerryCheesecakeImgSrc,
     type: 'dessert',
-    description:
-      'Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.',
+    description: 'Cheesecake served with a side of mixed berries.',
   },
 ];
 
 // element selectors
 
 const menu = document.querySelector('#menu');
+const buttons = document.querySelectorAll('.buttons__list .btn');
 
 // populating the HTML
 function populateItem(item) {
@@ -197,4 +183,30 @@ for (let i = 0; i < dishes.length; i++) {
 
 // updating the HTML
 
+function updateDisplay(type) {
+  const menuItems = menu.childNodes;
+  if (type === 'all') {
+    menuItems.forEach((menuItem) => {
+      menuItem.classList.remove('item--inactive');
+    });
+  } else {
+    menuItems.forEach((menuItem) => {
+      if (menuItem.dataset.type != type) {
+        menuItem.classList.add('item--inactive');
+      } else {
+        menuItem.classList.remove('item--inactive');
+      }
+    });
+  }
+}
+
 // event listeners
+
+buttons.forEach((selectedButton) => {
+  selectedButton.addEventListener('click', () => {
+    buttons.forEach((button) => button.classList.remove('btn--active'));
+    selectedButton.classList.add('btn--active');
+    const type = selectedButton.id;
+    updateDisplay(type);
+  });
+});
