@@ -1,0 +1,119 @@
+:root {
+  font-size: 100%;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  --brand: #8a2be2;
+  --bg: #f0faff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+main {
+  padding: 1rem;
+  max-width: 600px;
+  width: 60%;
+  min-width: 320px;
+  margin: 5rem auto 1rem;
+}
+
+main > * {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  position: relative;
+  margin: 0 auto 3rem;
+  font-weight: bold;
+}
+
+h1::after {
+  content: '';
+  background-color: var(--brand);
+  width: 40%;
+  position: absolute;
+  bottom: -1rem;
+  right: 30%;
+  height: 2px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 100%;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* || accordion */
+
+.accordion {
+  background-color: white;
+  border: 1px solid var(--brand);
+  border-radius: 1rem;
+}
+
+.accordion__toggle {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  border-radius: 1rem;
+  text-align: left;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.accordion__toggle::after {
+  content: '+';
+  line-height: 1;
+  color: var(--brand);
+  font-size: inherit;
+  position: absolute;
+  top: calc(50% - 0.6rem);
+  right: 1rem;
+}
+
+.accordion--open .accordion__toggle::after {
+  content: '-';
+}
+
+.accordion__panel {
+  display: none;
+  padding: 1rem;
+  position: relative;
+}
+
+.accordion--open .accordion__panel {
+  display: block;
+}
+
+.accordion--open .accordion__panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 80%;
+  height: 1px;
+  opacity: 0.3;
+  background-color: var(--brand);
+}
