@@ -1,0 +1,2 @@
+!function(){const o=document.querySelectorAll(".accordion__toggle"),c=document.querySelectorAll(".accordion");function n(){c.forEach((o=>{o.classList.remove("accordion--open")}))}o.forEach((o=>{o.addEventListener("click",(o=>{!function(o){const c=o.target.parentNode;c.classList.contains("accordion--open")?n():(n(),e=c,e.classList.add("accordion--open"));var e}(o)}))}))}();
+//# sourceMappingURL=index.5add5431.js.map
