@@ -13,7 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap"
       rel="stylesheet"
     />
 
@@ -21,5 +21,79 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Our menu</h1>
+      <ul class="buttons__list">
+        <li><button type="button" class="btn" id="all">All</button></li>
+        <li><button type="button" class="btn" id="salad">Salads</button></li>
+        <li><button type="button" class="btn" id="pasta">Pasta</button></li>
+        <li><button type="button" class="btn" id="seafood">Seafood</button></li>
+        <li><button type="button" class="btn" id="steak">Steak</button></li>
+        <li><button type="button" class="btn" id="dessert">Dessert</button></li>
+      </ul>
+      <div id="menu-items" class="container">
+        <!-- Demo item to test styling -->
+        <article class="item" data-type="salad">
+          <div class="item__image-wrap">
+            <img
+              class="item__image"
+              src="./images/pasta-bolognese-750px.jpg"
+              alt="Picture of menu item"
+            />
+          </div>
+          <section class="item__body">
+            <header class="item__header">
+              <h2 class="item__title">Item Title</h2>
+              <span class="item__price">$12.50</span>
+            </header>
+            <p class="item__description">
+              Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Item description.
+            </p>
+          </section>
+        </article>
+
+        <article class="item" data-type="salad">
+          <div class="item__image-wrap">
+            <img
+              class="item__image"
+              src="./images/pasta-bolognese-750px.jpg"
+              alt="Picture of menu item"
+            />
+          </div>
+          <section class="item__body">
+            <header class="item__header">
+              <h2 class="item__title">Item Title</h2>
+              <span class="item__price">$12.50</span>
+            </header>
+            <p class="item__description">
+              Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+            </p>
+          </section>
+        </article>
+
+        <article class="item" data-type="salad">
+          <div class="item__image-wrap">
+            <img
+              class="item__image"
+              src="./images/pasta-bolognese-750px.jpg"
+              alt="Picture of menu item"
+            />
+          </div>
+          <section class="item__body">
+            <header class="item__header">
+              <h2 class="item__title">Item Title</h2>
+              <span class="item__price">$12.50</span>
+            </header>
+            <p class="item__description">
+              Item description. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+  </body>
 </html>
