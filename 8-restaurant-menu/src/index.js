@@ -1,22 +1,21 @@
 // data
-
-import avocadoSaladImgSrc from 'url:./images/avocado-salad.jpg?width=450';
-import houseSaladImgSrc from 'url:./images/house-salad.jpg?width=450';
-import mediterraneanSaladImgSrc from 'url:./images/mediterranean-salad.jpg?width=450';
-import gnocchiImgSrc from 'url:./images/gnocchi.jpg?width=450';
-import lobsterRavioliImgSrc from 'url:./images/lobster-ravioli.jpg?width=450';
-import bologneseImgSrc from 'url:./images/pasta-bolognese.jpg?width=450';
-import pastaWithShrimpImgSrc from 'url:./images/pasta-with-shrimp.jpg?width=450';
-import penneAllaVodkaImgSrc from 'url:./images/penne-alla-vodka.jpg?width=450';
-import bbqShrimpImgSrc from 'url:./images/bbq-shrimp.jpg?width=450';
-import fishFryImgSrc from 'url:./images/fish-fry.jpg?width=450';
-import grilledSalmonImgSrc from 'url:./images/grilled-salmon.jpg?width=450';
-import sushiPlatterImgSrc from 'url:./images/sushi-platter.jpg?width=450';
-import filetMignonImgSrc from 'url:./images/filet-mignon.jpg?width=450';
-import chocolateCakeImgSrc from 'url:./images/chocolate-cake.jpg?width=450';
-import deathByBrownieImgSrc from 'url:./images/death-by-brownie.jpg?width=450';
-import tiramisuImgSrc from 'url:./images/tiramisu.jpg?width=450';
-import veryBerryCheesecakeImgSrc from 'url:./images/very-berry-cheesecake.jpg?width=450';
+import avocadoSaladImgSrc from 'url:./images/avocado-salad.jpg';
+import houseSaladImgSrc from 'url:./images/house-salad.jpg';
+import mediterraneanSaladImgSrc from 'url:./images/mediterranean-salad.jpg';
+import gnocchiImgSrc from 'url:./images/gnocchi.jpg';
+import lobsterRavioliImgSrc from 'url:./images/lobster-ravioli.jpg';
+import bologneseImgSrc from 'url:./images/pasta-bolognese.jpg';
+import pastaWithShrimpImgSrc from 'url:./images/pasta-with-shrimp.jpg';
+import penneAllaVodkaImgSrc from 'url:./images/penne-alla-vodka.jpg';
+import bbqShrimpImgSrc from 'url:./images/bbq-shrimp.jpg';
+import fishFryImgSrc from 'url:./images/fish-fry.jpg';
+import grilledSalmonImgSrc from 'url:./images/grilled-salmon.jpg';
+import sushiPlatterImgSrc from 'url:./images/sushi-platter.jpg';
+import filetMignonImgSrc from 'url:./images/filet-mignon.jpg';
+import chocolateCakeImgSrc from 'url:./images/chocolate-cake.jpg';
+import deathByBrownieImgSrc from 'url:./images/death-by-brownie.jpg';
+import tiramisuImgSrc from 'url:./images/tiramisu.jpg';
+import veryBerryCheesecakeImgSrc from 'url:./images/very-berry-cheesecake.jpg';
 
 const dishes = [
   {
