@@ -36,3 +36,9 @@ See it live: https://jonrutter-slide-in-nav.netlify.app/
 A demo modal box that pops up when users click a button. The box disappears when users click the greyed-out background.
 
 See it live: https://jonrutter-modal.netlify.app/
+
+## 7-faq
+
+A demo FAQ page, with an accordion menu.
+
+See it live: https://jonrutter-faq-page.netlify.app/
