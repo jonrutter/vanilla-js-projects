@@ -1,0 +1,8 @@
+:root {
+  font-size: 100%;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  --brand: #8a2be2;
+  --bg: #f0faff;
+}
