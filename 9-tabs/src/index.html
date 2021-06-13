@@ -21,5 +21,29 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>About Tabs</h1>
+      <div class="tabs">
+        <div class="tabs__buttons">
+          <button class="tabs__button" data-opens="panel-history">
+            History
+          </button>
+          <button class="tabs__button" data-opens="panel-vision">Vision</button>
+          <button class="tabs__button" data-opens="panel-goals">Goals</button>
+        </div>
+        <div class="tabs__panels">
+          <div class="tabs__panel tabs__panel--active" id="panel-history">
+            <h2>History</h2>
+          </div>
+          <div class="tabs__panel" id="panel-vision">
+            <h2>Vision</h2>
+          </div>
+          <div class="tabs__panel" id="panel-goals">
+            <h2>Goals</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
