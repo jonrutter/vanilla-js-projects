@@ -1,0 +1,2 @@
+!function(){const t=document.querySelectorAll(".tabs__button"),e=document.querySelectorAll(".tabs__panel");function c(t,e,c){t.forEach((t=>{t.isSameNode(e)?t.classList.add(c):t.classList.remove(c)}))}function a(a){const n=a.target,o="#"+n.dataset.opens,s=document.querySelector(o);c(t,n,"tabs__button--active"),c(e,s,"tabs__panel--active")}t.forEach((t=>{t.addEventListener("click",a)}))}();
+//# sourceMappingURL=index.d8bb6ec1.js.map
