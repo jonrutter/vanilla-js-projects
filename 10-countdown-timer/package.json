@@ -1,7 +1,7 @@
 {
   "name": "countdown-timer",
   "version": "1.0.0",
-  "description": "A demo coming soon webpage with a countdown timer.",
+  "description": "A demo coming soon page with a countdown timer. The site generates a random future date for the countdown, to simulate a real launch date.",
   "main": "public/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
