@@ -1,0 +1,96 @@
+:root {
+  font-size: 100%;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  --brand: hsl(200, 84%, 81%);
+  --inactive: hsl(200, 84%, 51%);
+  --bg: hsl(200, 84%, 90%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+main {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  font-size: 100%;
+  font-family: inherit;
+  line-height: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* || tabs */
+
+.tabs {
+  background-color: white;
+  min-width: 300px;
+  width: 80%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.tabs__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tabs__button {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: var(--inactive);
+  color: black;
+  transition: all 0.3s;
+}
+
+.tabs__button:hover {
+  background-color: var(--brand);
+}
+
+.tabs__button--active,
+.tabs__button--active:hover {
+  background-color: white;
+}
+
+.tabs__panel {
+  display: none;
+  padding: 1rem;
+}
+
+.tabs__panel--active {
+  display: block;
+}
