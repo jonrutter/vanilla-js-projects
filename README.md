@@ -54,3 +54,9 @@ See it live: https://jonrutter-restaurant-menu.netlify.app/
 A JavaScript-powered tab component.
 
 See it live: https://jonrutter-tabs-demo.netlify.app/
+
+## 10-countdown-timer
+
+A demo coming soon page with a countdown timer. The site generates a random future date for the countdown, to simulate a real launch date.
+
+See it live: https://jonrutter-countdown-timer.netlify.app/
