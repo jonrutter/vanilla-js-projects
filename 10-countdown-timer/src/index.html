@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coming Soon Countdown Title</title>
     <meta name="author" content="Jon Rutter" />
-    <meta
-      name="description"
-      content="A demo coming soon webpage with a countdown timer."
-    />
+    <meta name="description" content="A demo coming soon webpage with a countdown timer." />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap" rel="stylesheet" />
 
     <!-- My CSS / JS -->
     <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" defer></script>
   </head>
+
   <body>
-    <main>
-      <img draggable="false" class="img" src="./images/launch-new.svg" />
-      <section class="coming-soon">
-        <h1>We're Coming Soon</h1>
-        <time class="coming-soon__time" id="time">19 Days 23:19:29</p>
-      </section>
+    <main class="grid">
+      <div class="grid__column">
+        <img draggable="false" class="img" src="./images/launch-new.svg" />
+      </div>
+      <div class="grid__column">
+        <section class="coming-soon">
+          <h1>We're Coming Soon</h1>
+          <time class="coming-soon__time" id="time"></time>
+        </section>
+      </div>
     </main>
   </body>
+
 </html>
