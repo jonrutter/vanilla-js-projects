@@ -1,7 +1,7 @@
 {
   "name": "lorem-ipsum-generator",
   "version": "1.0.0",
-  "description": "A lorem ipsum placeholder text generator. Users can specify the number of paragraphs, sentences, words, or characters of placeholder text to generate.",
+  "description": "A lorem ipsum placeholder text generator. Users can specify the number of paragraphs, sentences, or words of placeholder text to generate. The result is then printed to the screen. Users can also click a button to copy the result to the clipboard.",
   "main": "public/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
