@@ -141,10 +141,27 @@ function handleSubmit(e) {
   } else if (inputType === 'word') {
     writeWords(inputNum);
   }
+
+  // setting the value of the text to copy to the clipboard
+  copyValue = result.innerText;
 }
 
 form.addEventListener('submit', handleSubmit);
 submitButton.addEventListener('click', handleSubmit);
 
+// copy to clipboard
+
+copyButton.addEventListener('click', () => {
+  navigator.clipboard.writeText(copyValue).then(
+    function () {
+      console.log('Copied!');
+    },
+    function () {
+      console.log('Failed!');
+    }
+  );
+});
+
 // initialize page
 writePara(1);
+let copyValue = result.innerText;
