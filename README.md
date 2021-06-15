@@ -60,3 +60,9 @@ See it live: https://jonrutter-tabs-demo.netlify.app/
 A demo coming soon page with a countdown timer. The site generates a random future date for the countdown, to simulate a real launch date.
 
 See it live: https://jonrutter-countdown-timer.netlify.app/
+
+## 11-lorem-ipsum
+
+A lorem ipsum placeholder text generator. Users can specify the number of paragraphs, sentences, or words of placeholder text to generate. The result is then printed to the screen. Users can also click a button to copy the result to the clipboard.
+
+See it live: https://jonrutter-lorem-ipsum.netlify.app/
