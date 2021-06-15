@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lorem Ipsum Generator</title>
     <meta name="author" content="Jon Rutter" />
     <meta name="description" content="A demo coming soon webpage with a countdown timer." />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lato&display=swap" rel="stylesheet" />
 
     <!-- My CSS / JS -->
     <link rel="stylesheet" href="./style.css" />
@@ -19,6 +19,33 @@
   </head>
 
   <body>
+    <header>
+      <h1>Lorem Ipsum Generator</h1>
+      <h2>Generate placeholder text for any project.</h2>
+    </header>
+    <main>
+      <form id="generator" class="form">
+        <div class="form__col">
+          <input type="number" class="form__number">
+        </div>
+        <div class="form__col">
+          <select>
+            <option>Paragraphs</option>
+            <option>Sentences</option>
+            <option>Words</option>
+            <option>Characters</option>
+          </select>
+        </div>
+        <div class="form__col">
+          <button type="submit">Generate!</button>
+        </div>
+      </form>
+      <div class="result" id="result">
+
+      </div>
+
+    </main>
+
 
   </body>
 
