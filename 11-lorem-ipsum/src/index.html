@@ -32,15 +32,14 @@
         <form id="generator" class="form">
           <div class="form__col">
             <label class="sr-only" for="number">Number</label>
-            <input type="number" id="number" class="form__input" placeholder="1">
+            <input type="number" name="number" id="number" class="form__input" placeholder="0">
 
           </div>
           <div class="form__col">
-            <select id="type" class="btn btn--dropdown">
-              <option>Paragraphs</option>
-              <option>Sentences</option>
-              <option>Words</option>
-              <option>Characters</option>
+            <select id="type" name="type" class="btn btn--dropdown">
+              <option value="paragraph">Paragraphs</option>
+              <option value="sentence">Sentences</option>
+              <option value="word">Words</option>
             </select>
           </div>
 
@@ -49,23 +48,11 @@
           </div>
         </form>
         <div class="copy">
-          <button class="btn btn--flex"><span>Copy</span><span class="material-icons">content_copy</span></button>
+          <button id="copy" class="btn btn--flex"><span>Copy</span><span
+              class="material-icons">content_copy</span></button>
         </div>
       </div>
       <div class="result" id="result">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna aliqua. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Tellus in hac habitasse platea
-          dictumst vestibulum rhoncus. Porta lorem mollis aliquam ut. Tortor posuere ac ut consequat semper viverra
-          nam.
-          Venenatis lectus magna fringilla urna. Interdum velit laoreet id donec ultrices tincidunt arcu. Eu
-          scelerisque
-          felis imperdiet proin fermentum leo vel. Et netus et malesuada fames. Turpis tincidunt id aliquet risus
-          feugiat.
-          Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Diam in arcu cursus euismod quis
-          viverra nibh cras pulvinar.
-        </p>
       </div>
 
     </main>
