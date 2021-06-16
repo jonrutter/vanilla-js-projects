@@ -66,3 +66,9 @@ See it live: https://jonrutter-countdown-timer.netlify.app/
 A lorem ipsum placeholder text generator. Users can specify the number of paragraphs, sentences, or words of placeholder text to generate. The result is then printed to the screen. Users can also click a button to copy the result to the clipboard.
 
 See it live: https://jonrutter-lorem-ipsum.netlify.app/
+
+## 12-grocery-list
+
+A grocery list web app. Users can create, update, and delete list entries, and the app automatically updates the DOM to reflect the changes.
+
+See it live: https://jonrutter-grocery-list.netlify.app/
