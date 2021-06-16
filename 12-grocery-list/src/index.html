@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
     <!-- My CSS / JS -->
     <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" defer></script>
@@ -21,6 +23,29 @@
   </head>
 
   <body>
+    <main>
+      <h1>Grocery List</h1>
+      <div class="app">
+        <ul class="list">
+          <li class="list__item" data-item="1">
+            <label for="item1" class="list__label">Item1</label>
+            <input name="item1" data-for="1" value="Item1" id="item1" class="list__edit">
+            <button class="list__done" data-for="1"><span class="material-icons">done</span></button>
+            <button class="list__delete" data-for="1"><span class="material-icons">delete</span></button>
+          </li>
+        </ul>
+
+        <form class="form">
+          <label class="form__label" for="item-input">Add Item:</label>
+          <div class="form__row">
+            <input type="text" class="form__input" name="item-input" id="item-input" required>
+            <button class="form__submit btn" type="submit" id="submit"><span class="material-icons">add</span></button>
+          </div>
+        </form>
+        <button class="btn btn--danger" type="button" id="clear-list">Clear List</button>
+
+      </div>
+    </main>
 
   </body>
 
