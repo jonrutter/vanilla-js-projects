@@ -98,23 +98,34 @@ button:hover {
 
 /* || list */
 
+.list {
+  width: 100%;
+}
+
 .list__item {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.list__form {
+  flex: 1;
+  max-width: 90%;
 }
 
 .list__edit {
-  display: none;
   padding: 0.5rem;
-  max-width: 10rem;
+  /* max-width: 10rem; */
+  width: 100%;
+  border-radius: 0;
+  /* flex: 1; */
 }
 
-.list__done {
-  display: none;
+/* .list__done {
   color: var(--brand-dark);
-}
+} */
 
 .list__delete {
   color: rgb(194, 14, 14);
@@ -138,9 +149,13 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .form__input:focus {
   box-shadow: 0px 0px 8px var(--secondary);
+}
+
+.hidden {
+  display: none;
 }
