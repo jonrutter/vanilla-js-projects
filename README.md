@@ -72,3 +72,9 @@ See it live: https://jonrutter-lorem-ipsum.netlify.app/
 A grocery list web app. Users can create, update, and delete list entries, and the app automatically updates the DOM to reflect the changes.
 
 See it live: https://jonrutter-grocery-list.netlify.app/
+
+## 13-image-slider
+
+An image slider component.
+
+See it live: https://jonrutter-image-slider.netlify.app/
