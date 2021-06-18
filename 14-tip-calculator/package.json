@@ -1,0 +1,26 @@
+{
+  "name": "tip-calculator",
+  "version": "1.0.0",
+  "description": "A JavaScript-powered tip calculator. Users can enter a price and tip percentage, and the app will display the tip amount and total.",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonrutter/vanilla-js-projects.git"
+  },
+  "author": "Jon Rutter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonrutter/vanilla-js-projects/issues"
+  },
+  "homepage": "https://github.com/jonrutter/vanilla-js-projects#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "parcel": "^2.0.0-beta.2",
+    "prettier": "^2.3.1"
+  }
+}
