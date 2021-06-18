@@ -21,6 +21,34 @@
   </head>
 
   <body>
+    <main>
+      <h1>Tip Calculator</h1>
+      <div class="app">
+        <form class="form">
+          <div class="form__row">
+            <label for="price" class="form__label">Price:</label>
+            <input type="number" id="price" class="form__input">
+          </div>
+          <div class="form__row">
+            <label for="tip-select" class="form__label">Tip:</label>
+            <select id="tip-select" class="form__input">
+              <option>Select a value</option>
+              <option value="0.15">15%</option>
+              <option value="0.18">18%</option>
+              <option value="0.2">20%</option>
+              <option value="0.22">22%</option>
+              <option value="0.25">25%</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="tip-manual" class="form__label">Or enter tip manually:</label>
+            <input type="number" id="tip-manual" class="form__input">
+          </div>
+          <button type="submit" class="form__submit">Calculate Tip</button>
+        </form>
+        <div class="result"></div>
+      </div>
+    </main>
 
   </body>
 
